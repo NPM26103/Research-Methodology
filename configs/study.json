@@ -1,0 +1,31 @@
+{
+  "project_version": "rsm-4.0.0",
+  "master_seed": 26,
+  "split_seed": 26,
+  "training_seed": 26,
+  "test_snrs": [
+    30,
+    20,
+    10
+  ],
+  "validation_snrs": [
+    60,
+    50,
+    40,
+    35,
+    30,
+    20,
+    10
+  ],
+  "gaussian_replicates": [
+    0,
+    1,
+    2
+  ],
+  "primary_snr_db": 20,
+  "bootstrap_repetitions": 10000,
+  "bootstrap_seed": 26,
+  "random_stream_policy": "All random streams are derived from master seed 26. Gaussian replicate IDs are stream identifiers, not alternative master seeds.",
+  "study_role": "main_test_protocol_and_separate_exploratory_validation",
+  "scope": "Within-recording, digital white-box label-aware waveform perturbations after clean segmentation"
+}
