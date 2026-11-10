@@ -1,0 +1,6 @@
+{
+  "complete": true,
+  "reason": "early_stopping",
+  "last_epoch": 491,
+  "best_epoch": 391
+}

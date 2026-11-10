@@ -1,0 +1,5 @@
+{
+  "seed": 26,
+  "method": "within-class shuffle, round(20%) val/test, remainder train",
+  "scope": "within-recording only"
+}

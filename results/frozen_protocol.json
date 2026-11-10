@@ -1,0 +1,96 @@
+{
+  "study": {
+    "project_version": "rsm-4.0.0",
+    "master_seed": 26,
+    "split_seed": 26,
+    "training_seed": 26,
+    "test_snrs": [
+      30,
+      20,
+      10
+    ],
+    "validation_snrs": [
+      60,
+      50,
+      40,
+      35,
+      30,
+      20,
+      10
+    ],
+    "gaussian_replicates": [
+      0,
+      1,
+      2
+    ],
+    "primary_snr_db": 20,
+    "bootstrap_repetitions": 10000,
+    "bootstrap_seed": 26,
+    "random_stream_policy": "All random streams are derived from master seed 26. Gaussian replicate IDs are stream identifiers, not alternative master seeds.",
+    "study_role": "main_test_protocol_and_separate_exploratory_validation",
+    "scope": "Within-recording, digital white-box label-aware waveform perturbations after clean segmentation"
+  },
+  "training_config": {
+    "model": "coatnet_0_224",
+    "baseline_description": "CoAtNet-based reproduction using timm; not the author model",
+    "seed": 26,
+    "batch_size": 16,
+    "epochs": 1100,
+    "patience": 100,
+    "learning_rate": 0.0005,
+    "time_shift_fraction": 0.4,
+    "mask_max_bins": 6,
+    "masks_per_axis": 2,
+    "frontend": {
+      "sample_rate": 44100,
+      "n_fft": 1024,
+      "win_length": 1024,
+      "hop_length": 255,
+      "n_mels": 64,
+      "f_min": 0.0,
+      "f_max": 22050.0,
+      "power": 2.0,
+      "center": true,
+      "pad_mode": "reflect",
+      "mel_scale": "htk",
+      "norm": null
+    }
+  },
+  "data_hashes": {
+    "manifest_sha256": "98c223b2c6ee0835faa3ceb1ede9b3ea845ef3bddffc75914d54cdabf53e308d",
+    "split_sha256": "ace01f200205abbb18fb6abf4af0b18dfcb57386045078e80a8543d3e957ffa1",
+    "label_map_sha256": "78d0ff0eb329c67120b98027d1dec8f5a853b643833b18d5974bcd0fe1c8b2a4"
+  },
+  "source_sha256": {
+    "configs/raw_reference.json": "be2369df80a35c07ec6f9f69a90f4cb42cafa20c4790b4a9206835c8253320d9",
+    "configs/run.json": "c16b95c45b0d915d8685e93a3e00fd9b19a64f55266baa56ad5ea935c464ea98",
+    "configs/segmentation_overrides.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "configs/study.json": "9ec1b92bc658bab07801d3b83c8bd1a1c473c1f747e2868aaf6e7c3a1e4f98a8",
+    "configs/verified_data_hashes.json": "38974cda0e4cb47a749e2ef9a1d226be04f86732d656c5f81e7d69edd5dc27fb",
+    "requirements.txt": "8d87f910e2382e3c0da62ca39c7c9d78077830ee451a070ce268a0904eeabfd0",
+    "rsm/__init__.py": "e0f7490a4521cc4bd690c2b3e01cb0a3c5537869559c7010c1db4ffbd69a23fa",
+    "rsm/audit.py": "3b590f222e700acced3633bd7900230751c0c416e0de6c7ccc2c9ae1ae05e401",
+    "rsm/audit_raw.py": "7cbf43e6ada6be5e55196324f8e33c74e9cffdb4297e141b09c4025f7c3be2ab",
+    "rsm/common.py": "13325ee0655957cbd93978bcf3bb2b9c55beda8c662bb363a9c2932c1840a959",
+    "rsm/data.py": "68a75dde422dd0f93b91d3300c1a2268ec5bc7347d7923ef11dd1fadc44f61d9",
+    "rsm/diagnostics.py": "fb93f18b6893e6c9f26ba8dbbabbb10e371f921d4f6551f9112d126d55f37b07",
+    "rsm/environment.py": "28b8322222935ef82935043d9e79d9a2c5d765fb4fadd087a3128f4b1951818f",
+    "rsm/evaluation.py": "ac3a796b954efc56a4eb6490224f7a95c42657f74f862bda2885be24de22f5a5",
+    "rsm/export.py": "e129a203d6d9047072a268d1d429361fd40cee75cde6b7f7bc92d7b3149157b8",
+    "rsm/io.py": "f9aa6df57510d3ae435c5ec532b6f7acfc4639c926eb92dc1d1e55d2688530e8",
+    "rsm/metrics.py": "6ffebb94dd47536fa8948a98e7084e9d349c37aff0d3dbe609fe1eebcee86e97",
+    "rsm/model.py": "db9b4e0b3da9b60a3635c9fac9b6375fc2378f6343367baea16257f58099e455",
+    "rsm/noise.py": "bf035b9cf76c6da37697e856f7b6bd2265e8ff68963c4a59954abb1d00b4d7e4",
+    "rsm/notebook.py": "82912f494dd4065a88db72fbff77c8c64f26a11e5daceb6a694ceca6f920d1bf",
+    "rsm/pipeline.py": "ff28355120ffc9e24d9656de43790c510ebe46f40adbdb4824a175aae756cb92",
+    "rsm/prepare_data.py": "08c2b0626c81f83e688df8be86f9738ea61f36a407bc7bf79b2cb15665aaee74",
+    "rsm/safety.py": "644eec17e120c9032d583351abd0db1cb907d37663eff88daec73ddfb0d6b585",
+    "rsm/seeding.py": "0f9ce5e9d74f26219540b9c57b162dabc128718956266c1af939d4e2209b9701",
+    "rsm/split_data.py": "a285bc29a89077a03fc1e3672e5299f045bac067d511c366da5f693c2d84500c",
+    "rsm/train.py": "b03334bec9953d5713772dba4572e207d1c70a4f52724c9c0834eca3c948ec0c"
+  },
+  "matches_reference_dataset": true,
+  "data_revision": false,
+  "qc_review_sha256": "3632b9a88d4405a4037b4d8f9dd457e8e33ddb35b572ebdd92dd3883f7ef1658",
+  "created_utc": "2026-11-09T12:29:09.438608+00:00"
+}

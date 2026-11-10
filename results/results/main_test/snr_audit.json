@@ -1,0 +1,7 @@
+{
+  "noisy_rows": 2160,
+  "max_target_error_db": 2.9293491330406596e-06,
+  "max_recomputation_difference_db": 7.105427357601002e-15,
+  "max_clip_fraction": 0.0,
+  "tolerance_db": 0.1
+}

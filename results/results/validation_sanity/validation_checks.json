@@ -1,0 +1,21 @@
+{
+  "partition": "val",
+  "n": 180,
+  "logits_shape": [
+    180,
+    36
+  ],
+  "clean_correct": 173,
+  "expected_correct": 173,
+  "accuracy": 0.9611111111111111,
+  "macro_f1": 0.9608445566778899,
+  "saved_val_macro_f1": 0.9608445566778899,
+  "zero_noise_max_logit_error": 0.0,
+  "train_statistics_match": true,
+  "all_modules_in_eval": true,
+  "frontend_mean_saved": -9.149314880371094,
+  "frontend_std_saved": 4.364091396331787,
+  "frontend_mean_recomputed": -9.149314880371094,
+  "frontend_std_recomputed": 4.364091396331787,
+  "baseline_reproduced": true
+}

@@ -1,0 +1,234 @@
+{
+  "repository": "https://github.com/JBFH-Dev/Keystroke-Datasets",
+  "commit": "2ecdc09b6d1868aae50813f6a6c842bdd52dab06",
+  "files": [
+    {
+      "path": "LICENSE",
+      "size": 1061,
+      "git_blob_sha1": "43b7f2ea20b1e4f089c2740f4cf3b3b7a7c98011",
+      "sha256": "75eef2e5240e22706d1a80df604c6d51cb1d127f6bd65bf963716cec08daae78"
+    },
+    {
+      "path": "MBPWavs/0.wav",
+      "size": 8128912,
+      "git_blob_sha1": "584e50dab6c33dd0ef01d141c9ccdec367eab70e",
+      "sha256": "910a4b1b724a16cb5b868861ab75c82febaa2884bbba66bf7dbc40eac762c282"
+    },
+    {
+      "path": "MBPWavs/1.wav",
+      "size": 6437368,
+      "git_blob_sha1": "52901366e0ba1f99d1d284855dafcec7250a1bbd",
+      "sha256": "1e35262697fe4a6d8e9274c40c9dafe32a3bbe7d264a7c69b7c4d3da31246bbe"
+    },
+    {
+      "path": "MBPWavs/2.wav",
+      "size": 6811000,
+      "git_blob_sha1": "e56814342d1540f934556b20e3cfb4e6fba6648d",
+      "sha256": "1b03986185f15d05ac629a3df5ccecb073c07c14407cfee1b59cdf388aa81a15"
+    },
+    {
+      "path": "MBPWavs/3.wav",
+      "size": 7580264,
+      "git_blob_sha1": "24f154c8c3387c99d1b352a884bd87ac828352b5",
+      "sha256": "849a143c8cc81fbde327b7651cf1750cbad2bdf688c00505fd3912be594e74c6"
+    },
+    {
+      "path": "MBPWavs/4.wav",
+      "size": 7369312,
+      "git_blob_sha1": "78a11aa0f958130276af41e0b8c08866c8052df6",
+      "sha256": "4542d58035f6a97ba3f3534a917281566528c58b1b4e57ac156ea70c4e64c607"
+    },
+    {
+      "path": "MBPWavs/5.wav",
+      "size": 7728696,
+      "git_blob_sha1": "08b30d5cab81d27d2787b63f4095039b885e3e42",
+      "sha256": "065ab692cd726407e5875ee9bad44c679645b6653c2e524ae6ecfcb1a3752b19"
+    },
+    {
+      "path": "MBPWavs/6.wav",
+      "size": 8715152,
+      "git_blob_sha1": "89d31fd4a05482f062500d8f6a56f93a27890930",
+      "sha256": "751fe73a9d795630fe93e15d9b4f38a3cea841dad29c2760670e9b49fd234cc3"
+    },
+    {
+      "path": "MBPWavs/7.wav",
+      "size": 8763944,
+      "git_blob_sha1": "eae27194f333111937a2ba544facaf52d09d120b",
+      "sha256": "f81ef021d337147d33b3e33715214314e4cc2f3746206e1f969b9ebae91d25f8"
+    },
+    {
+      "path": "MBPWavs/8.wav",
+      "size": 8412864,
+      "git_blob_sha1": "ff830932c01049dd084c27a80780fe0aefcb1f28",
+      "sha256": "378ab5deb94641b8252caaefb375fbb3a639229ad36cb23f11079ad229f6343a"
+    },
+    {
+      "path": "MBPWavs/9.wav",
+      "size": 8091496,
+      "git_blob_sha1": "da3080b5ca346a0d2d6b1fb1da64aad48100d05c",
+      "sha256": "b57f36bb90104938d2c675de28df84bb2ee9dee515b2d9d9bb4a16699e16fffe"
+    },
+    {
+      "path": "MBPWavs/A.wav",
+      "size": 7600408,
+      "git_blob_sha1": "4804282154efd49cda80d1b9c165e71259312b7b",
+      "sha256": "2f1c8f996600cabca22b84332c8d4ebf6690e73a473b69e26fc554318fe5d4f3"
+    },
+    {
+      "path": "MBPWavs/B.wav",
+      "size": 7370464,
+      "git_blob_sha1": "c9a947b8747616563946d24d4de7ed3aac9c723e",
+      "sha256": "36a054250e11097fad7d3efe98ea2825559ea9c51070b4d3847200f2c3b484c0"
+    },
+    {
+      "path": "MBPWavs/C.wav",
+      "size": 7118328,
+      "git_blob_sha1": "f3116f6de94f42b49b9abedfe8f1ba29e8ee8f27",
+      "sha256": "2dfaa721666793ecea002cd9a5b2ed51a9d4e3c02ead548fcdb4888b6ba6492a"
+    },
+    {
+      "path": "MBPWavs/D.wav",
+      "size": 8165144,
+      "git_blob_sha1": "dffc28c6182e20633942f61a27b78894753c38e0",
+      "sha256": "a1fa4270e7093efb5f1eb9c1013bc521eeacf485ece6e59b7a76545f9e83f37b"
+    },
+    {
+      "path": "MBPWavs/E.wav",
+      "size": 8040496,
+      "git_blob_sha1": "b0f8bde477e61232c89519942042cab60dc0ad88",
+      "sha256": "baec0e314b349836889bcbc19c24a7d5ecb7f899db3bf9422684c064454f9566"
+    },
+    {
+      "path": "MBPWavs/F.wav",
+      "size": 7355896,
+      "git_blob_sha1": "a7518e2284b6d319647d1b106b12dac158442a67",
+      "sha256": "88e8cdb7db1b6ea3573e436ccd05c47bf2df218259ef8f8ae9a032a67b68feb1"
+    },
+    {
+      "path": "MBPWavs/G.wav",
+      "size": 7686088,
+      "git_blob_sha1": "baa97afbf0dccc6b089a1d5e8627911c3876a33f",
+      "sha256": "d33ba8f78f3e21ca165ce6ede38e8804fd6962d6222935c419b0fe34188d2a26"
+    },
+    {
+      "path": "MBPWavs/H.wav",
+      "size": 7791520,
+      "git_blob_sha1": "80d31931c24dac3c46961425265d2ed8587c706a",
+      "sha256": "e441736f0edb3f7c4bd1c8af6a4601bc762056b18927a262de98aa9b939ac0c8"
+    },
+    {
+      "path": "MBPWavs/I.wav",
+      "size": 7769664,
+      "git_blob_sha1": "7ffdc95d86dcfd082e973cea63f6c3c385e15db3",
+      "sha256": "fc169203141f803a0de70f880793e1d846f9166415ef392c3806942106e690a0"
+    },
+    {
+      "path": "MBPWavs/J.wav",
+      "size": 6773640,
+      "git_blob_sha1": "9bfb46c6298b9bce9c04cb49c008e4c1378bbf39",
+      "sha256": "6ab33a882439251bd4f52e468a2539efed26fa32f48805b311ca91a5b6ec6b80"
+    },
+    {
+      "path": "MBPWavs/K.wav",
+      "size": 7173792,
+      "git_blob_sha1": "43f1926cf07d70f09ec17e7edcb1404ed26b1e2b",
+      "sha256": "5f8463aa2672883ae846340b41c085a0b849a3a008c453706e521d8938a4032d"
+    },
+    {
+      "path": "MBPWavs/L.wav",
+      "size": 7331304,
+      "git_blob_sha1": "04ace942e84501d68ef08e89a94aa7599b398f99",
+      "sha256": "3317112adf7941f7d222918acca955d120788e3d25a5482e551a3f19036b8adc"
+    },
+    {
+      "path": "MBPWavs/M.wav",
+      "size": 7318448,
+      "git_blob_sha1": "bdf492d62ac52152e8935934f929f355314fcaf7",
+      "sha256": "7180027653210cfecd8308a86a0406d723554683c6ba6543e5b8d5709a86f786"
+    },
+    {
+      "path": "MBPWavs/N.wav",
+      "size": 6699552,
+      "git_blob_sha1": "d96cee6cb8a88293643dcfef6c42a2b07761ce48",
+      "sha256": "1d89518012a0021334ada9c3c88067742bc1b1b22f9576480a174454e682a9eb"
+    },
+    {
+      "path": "MBPWavs/O.wav",
+      "size": 7465792,
+      "git_blob_sha1": "5577aa27dff2d95fe7009201316530f0d2e231ea",
+      "sha256": "6fc9eabd4300cb34921ebb61f6e1fbb40b8835ba84684ffc3f84131fd4982ebd"
+    },
+    {
+      "path": "MBPWavs/P.wav",
+      "size": 7622792,
+      "git_blob_sha1": "8208fc1953525f4d6ad776868cc889075531cd2e",
+      "sha256": "9e571e13de91f3dca4086b5b3126db3698599942a161ac0c3d77f4023c41e16b"
+    },
+    {
+      "path": "MBPWavs/Q.wav",
+      "size": 7872064,
+      "git_blob_sha1": "2e5e33df208c53ee7dcfb881fd081ae459271227",
+      "sha256": "8b019ecdd7ca08f31a6221ccd95863023a920c6ae334acfcefaff03eb8feb274"
+    },
+    {
+      "path": "MBPWavs/R.wav",
+      "size": 7888712,
+      "git_blob_sha1": "b71c718f71769482b0ee24c010de7456c13307dc",
+      "sha256": "a8085e8bedf3b86331e2392ce3a92a00cea95627b0e8541b8d569a07da90bda3"
+    },
+    {
+      "path": "MBPWavs/S.wav",
+      "size": 7543392,
+      "git_blob_sha1": "8d89378a44bfcdd7ad8b92b0bf3b860a3eea8fb5",
+      "sha256": "67cae23007c83d4e78a63427cd682821be47a4600068b0a8c6d613c7296770e5"
+    },
+    {
+      "path": "MBPWavs/T.wav",
+      "size": 7545568,
+      "git_blob_sha1": "9c01c39531eff2ca4ee31ad2313315e7d40b2686",
+      "sha256": "b87976f867b8074652f26771f46e85faee16984b3e69956a90e8d7c6e9d7d038"
+    },
+    {
+      "path": "MBPWavs/U.wav",
+      "size": 7694544,
+      "git_blob_sha1": "aa633751075a6b237beab3401ebffb7c8b7e8a25",
+      "sha256": "6c0c761907df86c6e76d606549d8935d7af7e5aa817e02631615ba732db341e0"
+    },
+    {
+      "path": "MBPWavs/V.wav",
+      "size": 6931640,
+      "git_blob_sha1": "dd754903a5c3b28172c326edb90a39f4c2a11f35",
+      "sha256": "42384cc00c8082b498d8a9c382c6dc14083705926611c2a153f9ceee03a041b2"
+    },
+    {
+      "path": "MBPWavs/W.wav",
+      "size": 7994512,
+      "git_blob_sha1": "85c7789003c346e14553470f048461b94357bc7c",
+      "sha256": "a6f955fd5620331970836b678a449ee6db0fb621483743c71c8735ced645a429"
+    },
+    {
+      "path": "MBPWavs/X.wav",
+      "size": 7083304,
+      "git_blob_sha1": "df10029ca72b1a595a52766e44362fac1cab22e6",
+      "sha256": "15a8be292c4b92b759ea5168e98fdd5431ee4a27aa25d1688642473a497643d9"
+    },
+    {
+      "path": "MBPWavs/Y.wav",
+      "size": 7811784,
+      "git_blob_sha1": "ed0ce1d9df34e405fd298045ce42510ce0d9a36d",
+      "sha256": "e207841c7b5920a662e331578af5ac1c0ee32a6ab3087e84216866af397d9966"
+    },
+    {
+      "path": "MBPWavs/Z.wav",
+      "size": 7370816,
+      "git_blob_sha1": "4ab1a80bae96ae2deb5efe26e780e8c46772c497",
+      "sha256": "7615a9876f9f42633c202b70cd027ad683cfbd22742fd22dcd9761d8fabcfe4e"
+    },
+    {
+      "path": "README.md",
+      "size": 3163,
+      "git_blob_sha1": "bcf1ee3364dea6d2ff3f3fc0bd22185bd52794bf",
+      "sha256": "ca508d22851d8a851b81edbe5023b006cf798e744e4830bd3046b8f80a521d51"
+    }
+  ]
+}

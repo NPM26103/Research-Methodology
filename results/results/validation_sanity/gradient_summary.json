@@ -1,0 +1,7 @@
+{
+  "finite_nonzero_gradients_and_fgsm_sign_passed": true,
+  "samples": 36,
+  "decreasing_loss_probes": 0,
+  "zero_change_probes": 0,
+  "interpretation": "Finite differences are diagnostic, not a pass criterion: tiny steps may round to zero; larger steps may cross nonlinear boundaries. Investigate sustained decreases."
+}

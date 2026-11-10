@@ -1,0 +1,4 @@
+target_snr,difference_pp,ci_low_pp,ci_high_pp,n,gaussian_replicates,master_seed,primary,interpretation,analysis_role
+30,-0.3703703703703706,-2.592592592592593,1.851851851851851,180,3,26,False,inconclusive,main_test_experiment
+20,0.0,0.0,0.0,180,3,26,True,inconclusive,main_test_experiment
+10,-1.2962962962962965,-3.3333333333333335,0.9259259259259257,180,3,26,False,inconclusive,main_test_experiment

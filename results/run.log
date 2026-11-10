@@ -1,0 +1,588 @@
+
+2026-11-09T12:28:40.477139+00:00 ["/usr/bin/python3", "-u", "-B", "-m", "rsm.audit_raw", "--source", "/content/rsm_data/seed26/raw/MBPWavs", "--out", "/content/rsm_data/seed26/raw_audit"]
+/content/RsM/rsm/audit_raw.py:21: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, x = wavfile.read(path)
+WAV count: 36 missing labels: [] extra labels: []
+Sample rates: [44100]
+Channels: [2]
+Inspect/listen before segmentation. Metadata is not manual QC approval.
+
+2026-11-09T12:28:42.893167+00:00 ["/usr/bin/python3", "-u", "-B", "-m", "rsm.prepare_data", "--source", "/content/rsm_data/seed26/raw/MBPWavs", "--out", "/content/rsm_data/seed26/processed", "--settings", "/content/RsM/configs/segmentation_overrides.json"]
+/content/RsM/rsm/common.py:21: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, x = wavfile.read(path)
+0: 25 clips
+1: 25 clips
+2: 25 clips
+3: 25 clips
+4: 25 clips
+5: 25 clips
+6: 25 clips
+7: 25 clips
+8: 25 clips
+9: 25 clips
+a: 25 clips
+b: 25 clips
+c: 25 clips
+d: 25 clips
+e: 25 clips
+f: 25 clips
+g: 25 clips
+h: 25 clips
+i: 25 clips
+j: 26 clips
+k: 25 clips
+l: 25 clips
+m: 25 clips
+n: 25 clips
+o: 25 clips
+p: 25 clips
+q: 25 clips
+r: 25 clips
+s: 25 clips
+t: 25 clips
+u: 25 clips
+v: 25 clips
+w: 25 clips
+x: 25 clips
+y: 25 clips
+z: 25 clips
+Inspect qc/index.html, listen to the required candidates, and record the QC review before freezing.
+
+2026-11-09T12:29:02.365404+00:00 ["/usr/bin/python3", "-u", "-B", "-m", "rsm.split_data", "--processed", "/content/rsm_data/seed26/processed", "--seed", "26"]
+split  test  train  val
+key                    
+0         5     15    5
+1         5     15    5
+2         5     15    5
+3         5     15    5
+4         5     15    5
+5         5     15    5
+6         5     15    5
+7         5     15    5
+8         5     15    5
+9         5     15    5
+a         5     15    5
+b         5     15    5
+c         5     15    5
+d         5     15    5
+e         5     15    5
+f         5     15    5
+g         5     15    5
+h         5     15    5
+i         5     15    5
+j         5     16    5
+k         5     15    5
+l         5     15    5
+m         5     15    5
+n         5     15    5
+o         5     15    5
+p         5     15    5
+q         5     15    5
+r         5     15    5
+s         5     15    5
+t         5     15    5
+u         5     15    5
+v         5     15    5
+w         5     15    5
+x         5     15    5
+y         5     15    5
+z         5     15    5
+Totals: {'train': 541, 'test': 180, 'val': 180}
+
+2026-11-09T12:29:10.781834+00:00 ["/usr/bin/python3", "-u", "-B", "-m", "rsm.train", "--processed", "/content/rsm_data/seed26/processed", "--config", "/content/drive/MyDrive/RsM/runs/seed26/training_config.json", "--run", "/content/drive/MyDrive/RsM/runs/seed26/training", "--device", "cuda"]
+/usr/local/lib/python3.13/dist-packages/torch/jit/_script.py:1643: FutureWarning: `torch.jit.interface` is deprecated. Please use `torch.compile` instead.
+  warnings.warn(
+Device: cuda model: coatnet_0_224 parameters: 24245872 train: 541 val: 180
+epoch 1: train loss=3.9268, val acc=0.0278, val F1=0.0015, seconds=4.0
+epoch 2: train loss=3.7923, val acc=0.0278, val F1=0.0015, seconds=1.6
+epoch 3: train loss=3.8000, val acc=0.0278, val F1=0.0015, seconds=1.6
+epoch 4: train loss=3.7382, val acc=0.0278, val F1=0.0015, seconds=1.9
+epoch 5: train loss=3.6960, val acc=0.0333, val F1=0.0031, seconds=1.6
+epoch 6: train loss=3.7831, val acc=0.0278, val F1=0.0015, seconds=1.6
+epoch 7: train loss=3.7380, val acc=0.0278, val F1=0.0016, seconds=1.5
+epoch 8: train loss=3.6853, val acc=0.0278, val F1=0.0015, seconds=2.1
+epoch 9: train loss=3.7357, val acc=0.0333, val F1=0.0048, seconds=1.8
+epoch 10: train loss=3.7642, val acc=0.0333, val F1=0.0037, seconds=1.6
+epoch 11: train loss=3.6813, val acc=0.0389, val F1=0.0124, seconds=1.6
+epoch 12: train loss=3.6473, val acc=0.0500, val F1=0.0149, seconds=1.9
+epoch 13: train loss=3.6562, val acc=0.0667, val F1=0.0169, seconds=1.7
+epoch 14: train loss=3.6427, val acc=0.0333, val F1=0.0086, seconds=1.6
+epoch 15: train loss=3.5965, val acc=0.0278, val F1=0.0023, seconds=1.6
+epoch 16: train loss=3.5800, val acc=0.0389, val F1=0.0104, seconds=2.7
+epoch 17: train loss=3.5907, val acc=0.0222, val F1=0.0109, seconds=1.8
+epoch 18: train loss=3.5804, val acc=0.0444, val F1=0.0099, seconds=1.6
+epoch 19: train loss=3.5856, val acc=0.0444, val F1=0.0113, seconds=1.6
+epoch 20: train loss=3.5444, val acc=0.0556, val F1=0.0101, seconds=1.9
+epoch 21: train loss=3.5392, val acc=0.0333, val F1=0.0043, seconds=1.6
+epoch 22: train loss=3.4868, val acc=0.0444, val F1=0.0113, seconds=1.6
+epoch 23: train loss=3.4932, val acc=0.0667, val F1=0.0103, seconds=1.9
+epoch 24: train loss=3.4975, val acc=0.0389, val F1=0.0092, seconds=1.9
+epoch 25: train loss=3.4323, val acc=0.0556, val F1=0.0142, seconds=1.6
+epoch 26: train loss=3.4217, val acc=0.0611, val F1=0.0156, seconds=1.7
+epoch 27: train loss=3.4733, val acc=0.0333, val F1=0.0075, seconds=1.9
+epoch 28: train loss=3.5591, val acc=0.0667, val F1=0.0287, seconds=1.9
+epoch 29: train loss=3.3619, val acc=0.0611, val F1=0.0225, seconds=1.6
+epoch 30: train loss=3.3641, val acc=0.0278, val F1=0.0040, seconds=1.7
+epoch 31: train loss=3.2914, val acc=0.0611, val F1=0.0240, seconds=1.9
+epoch 32: train loss=3.3030, val acc=0.0667, val F1=0.0165, seconds=1.9
+epoch 33: train loss=3.3060, val acc=0.0778, val F1=0.0275, seconds=1.6
+epoch 34: train loss=3.2158, val acc=0.0556, val F1=0.0166, seconds=1.7
+epoch 35: train loss=3.3162, val acc=0.0611, val F1=0.0182, seconds=1.9
+epoch 36: train loss=3.2220, val acc=0.0667, val F1=0.0329, seconds=1.6
+epoch 37: train loss=3.1550, val acc=0.1000, val F1=0.0503, seconds=1.6
+epoch 38: train loss=3.2262, val acc=0.0833, val F1=0.0337, seconds=2.0
+epoch 39: train loss=3.1081, val acc=0.0833, val F1=0.0367, seconds=1.5
+epoch 40: train loss=3.1871, val acc=0.0944, val F1=0.0376, seconds=1.9
+epoch 41: train loss=3.1443, val acc=0.0833, val F1=0.0270, seconds=1.9
+epoch 42: train loss=3.1187, val acc=0.1056, val F1=0.0497, seconds=1.9
+epoch 43: train loss=3.0843, val acc=0.0833, val F1=0.0361, seconds=1.6
+epoch 44: train loss=3.1059, val acc=0.1167, val F1=0.0431, seconds=1.8
+epoch 45: train loss=3.1385, val acc=0.1111, val F1=0.0438, seconds=1.9
+epoch 46: train loss=3.1561, val acc=0.0778, val F1=0.0291, seconds=1.6
+epoch 47: train loss=3.0977, val acc=0.1278, val F1=0.0596, seconds=1.6
+epoch 48: train loss=2.9842, val acc=0.1000, val F1=0.0408, seconds=1.6
+epoch 49: train loss=2.9233, val acc=0.1278, val F1=0.0527, seconds=2.0
+epoch 50: train loss=3.0132, val acc=0.1278, val F1=0.0620, seconds=1.8
+epoch 51: train loss=2.8774, val acc=0.1778, val F1=0.1085, seconds=1.6
+epoch 52: train loss=2.9072, val acc=0.1278, val F1=0.0544, seconds=1.9
+epoch 53: train loss=2.8834, val acc=0.1000, val F1=0.0737, seconds=2.0
+epoch 54: train loss=2.8163, val acc=0.1667, val F1=0.1030, seconds=1.8
+epoch 55: train loss=2.7550, val acc=0.1278, val F1=0.0785, seconds=1.8
+epoch 56: train loss=2.8547, val acc=0.1278, val F1=0.1017, seconds=2.0
+epoch 57: train loss=2.8198, val acc=0.1389, val F1=0.0799, seconds=1.6
+epoch 58: train loss=2.7255, val acc=0.2111, val F1=0.1450, seconds=1.6
+epoch 59: train loss=2.5006, val acc=0.1278, val F1=0.0686, seconds=2.0
+epoch 60: train loss=2.6163, val acc=0.2333, val F1=0.1522, seconds=1.9
+epoch 61: train loss=2.4458, val acc=0.2167, val F1=0.1529, seconds=1.7
+epoch 62: train loss=2.5423, val acc=0.1056, val F1=0.0806, seconds=1.6
+epoch 63: train loss=2.5110, val acc=0.2556, val F1=0.1904, seconds=1.8
+epoch 64: train loss=2.5037, val acc=0.2000, val F1=0.1169, seconds=1.7
+epoch 65: train loss=2.4734, val acc=0.2056, val F1=0.1347, seconds=2.1
+epoch 66: train loss=2.3969, val acc=0.3167, val F1=0.2374, seconds=1.8
+epoch 67: train loss=2.4407, val acc=0.2667, val F1=0.1838, seconds=1.8
+epoch 68: train loss=2.4123, val acc=0.3500, val F1=0.2831, seconds=2.1
+epoch 69: train loss=2.1871, val acc=0.3389, val F1=0.2595, seconds=1.9
+epoch 70: train loss=2.3109, val acc=0.4000, val F1=0.3178, seconds=1.9
+epoch 71: train loss=2.2312, val acc=0.1889, val F1=0.1256, seconds=1.7
+epoch 72: train loss=2.1726, val acc=0.3222, val F1=0.2388, seconds=1.9
+epoch 73: train loss=2.1646, val acc=0.2500, val F1=0.1962, seconds=2.0
+epoch 74: train loss=2.1742, val acc=0.2667, val F1=0.2193, seconds=1.6
+epoch 75: train loss=2.2289, val acc=0.1889, val F1=0.1353, seconds=1.7
+epoch 76: train loss=2.0543, val acc=0.3944, val F1=0.3191, seconds=1.7
+epoch 77: train loss=2.0898, val acc=0.3833, val F1=0.3487, seconds=2.0
+epoch 78: train loss=1.9323, val acc=0.2778, val F1=0.2126, seconds=1.6
+epoch 79: train loss=1.9453, val acc=0.3056, val F1=0.2381, seconds=1.8
+epoch 80: train loss=2.0220, val acc=0.3389, val F1=0.2773, seconds=2.0
+epoch 81: train loss=1.9576, val acc=0.4611, val F1=0.3914, seconds=1.6
+epoch 82: train loss=1.8566, val acc=0.2611, val F1=0.1947, seconds=1.6
+epoch 83: train loss=1.7996, val acc=0.4222, val F1=0.3790, seconds=3.2
+epoch 84: train loss=1.8883, val acc=0.3889, val F1=0.3374, seconds=2.1
+epoch 85: train loss=1.7682, val acc=0.3111, val F1=0.2671, seconds=2.0
+epoch 86: train loss=1.9739, val acc=0.3944, val F1=0.3157, seconds=1.7
+epoch 87: train loss=1.8436, val acc=0.4500, val F1=0.3889, seconds=1.6
+epoch 88: train loss=1.8683, val acc=0.5056, val F1=0.4561, seconds=1.6
+epoch 89: train loss=1.7246, val acc=0.5500, val F1=0.5260, seconds=2.0
+epoch 90: train loss=1.6247, val acc=0.4611, val F1=0.4271, seconds=1.6
+epoch 91: train loss=1.6528, val acc=0.4833, val F1=0.4245, seconds=1.6
+epoch 92: train loss=1.6138, val acc=0.5056, val F1=0.4683, seconds=1.8
+epoch 93: train loss=1.7368, val acc=0.4833, val F1=0.4381, seconds=2.1
+epoch 94: train loss=1.7080, val acc=0.4111, val F1=0.3636, seconds=1.6
+epoch 95: train loss=1.6369, val acc=0.3944, val F1=0.3411, seconds=1.6
+epoch 96: train loss=1.6724, val acc=0.5500, val F1=0.5065, seconds=1.6
+epoch 97: train loss=1.6782, val acc=0.4889, val F1=0.4472, seconds=1.6
+epoch 98: train loss=1.5860, val acc=0.5611, val F1=0.5246, seconds=1.9
+epoch 99: train loss=1.5491, val acc=0.4778, val F1=0.4453, seconds=1.6
+epoch 100: train loss=1.5181, val acc=0.5500, val F1=0.5233, seconds=1.6
+epoch 101: train loss=1.5678, val acc=0.4389, val F1=0.4057, seconds=2.0
+epoch 102: train loss=1.6857, val acc=0.5611, val F1=0.5274, seconds=1.9
+epoch 103: train loss=1.4162, val acc=0.6056, val F1=0.5759, seconds=1.8
+epoch 104: train loss=1.3386, val acc=0.5056, val F1=0.4622, seconds=2.0
+epoch 105: train loss=1.3814, val acc=0.5333, val F1=0.5100, seconds=1.6
+epoch 106: train loss=1.3538, val acc=0.5444, val F1=0.5048, seconds=1.7
+epoch 107: train loss=1.4973, val acc=0.5056, val F1=0.4676, seconds=1.8
+epoch 108: train loss=1.4321, val acc=0.6111, val F1=0.5859, seconds=1.9
+epoch 109: train loss=1.4412, val acc=0.5389, val F1=0.5060, seconds=2.1
+epoch 110: train loss=1.3974, val acc=0.6389, val F1=0.6144, seconds=2.2
+epoch 111: train loss=1.3262, val acc=0.6167, val F1=0.5801, seconds=1.8
+epoch 112: train loss=1.4076, val acc=0.6333, val F1=0.5959, seconds=2.0
+epoch 113: train loss=1.2367, val acc=0.6222, val F1=0.6005, seconds=1.7
+epoch 114: train loss=1.3457, val acc=0.6111, val F1=0.5832, seconds=1.7
+epoch 115: train loss=1.3367, val acc=0.6833, val F1=0.6684, seconds=1.9
+epoch 116: train loss=1.3163, val acc=0.6778, val F1=0.6701, seconds=1.7
+epoch 117: train loss=1.1805, val acc=0.6556, val F1=0.6308, seconds=2.0
+epoch 118: train loss=1.3563, val acc=0.5444, val F1=0.5133, seconds=1.9
+epoch 119: train loss=1.3748, val acc=0.6333, val F1=0.6156, seconds=1.8
+epoch 120: train loss=1.3456, val acc=0.1944, val F1=0.1457, seconds=1.6
+epoch 121: train loss=2.1578, val acc=0.5333, val F1=0.5158, seconds=1.9
+epoch 122: train loss=1.4791, val acc=0.4889, val F1=0.4356, seconds=1.7
+epoch 123: train loss=1.4345, val acc=0.6278, val F1=0.6141, seconds=1.6
+epoch 124: train loss=1.1959, val acc=0.7000, val F1=0.6822, seconds=1.6
+epoch 125: train loss=1.2135, val acc=0.6000, val F1=0.5623, seconds=2.0
+epoch 126: train loss=1.0739, val acc=0.5611, val F1=0.5267, seconds=1.8
+epoch 127: train loss=1.1238, val acc=0.7111, val F1=0.7007, seconds=1.7
+epoch 128: train loss=1.0876, val acc=0.6889, val F1=0.6634, seconds=1.7
+epoch 129: train loss=1.1809, val acc=0.6889, val F1=0.6698, seconds=1.9
+epoch 130: train loss=1.1374, val acc=0.6778, val F1=0.6627, seconds=1.8
+epoch 131: train loss=1.1093, val acc=0.7333, val F1=0.7230, seconds=1.6
+epoch 132: train loss=1.0296, val acc=0.6611, val F1=0.6454, seconds=1.9
+epoch 133: train loss=1.0552, val acc=0.7667, val F1=0.7478, seconds=1.8
+epoch 134: train loss=0.9958, val acc=0.7444, val F1=0.7321, seconds=2.9
+epoch 135: train loss=1.0143, val acc=0.6722, val F1=0.6444, seconds=2.0
+epoch 136: train loss=1.2554, val acc=0.4000, val F1=0.3671, seconds=1.7
+epoch 137: train loss=1.4941, val acc=0.7111, val F1=0.6955, seconds=1.8
+epoch 138: train loss=1.2234, val acc=0.7611, val F1=0.7496, seconds=1.9
+epoch 139: train loss=0.9417, val acc=0.7722, val F1=0.7578, seconds=1.6
+epoch 140: train loss=0.8513, val acc=0.7389, val F1=0.7238, seconds=1.6
+epoch 141: train loss=0.9726, val acc=0.7167, val F1=0.7111, seconds=1.6
+epoch 142: train loss=1.1498, val acc=0.7278, val F1=0.7107, seconds=1.9
+epoch 143: train loss=1.0326, val acc=0.7889, val F1=0.7829, seconds=1.9
+epoch 144: train loss=1.1483, val acc=0.7000, val F1=0.6863, seconds=1.6
+epoch 145: train loss=1.1505, val acc=0.6611, val F1=0.6274, seconds=2.0
+epoch 146: train loss=1.0115, val acc=0.7722, val F1=0.7693, seconds=1.8
+epoch 147: train loss=0.9987, val acc=0.7056, val F1=0.6988, seconds=1.8
+epoch 148: train loss=0.9488, val acc=0.7611, val F1=0.7564, seconds=1.6
+epoch 149: train loss=0.8122, val acc=0.7944, val F1=0.7893, seconds=2.0
+epoch 150: train loss=0.8293, val acc=0.7667, val F1=0.7565, seconds=1.8
+epoch 151: train loss=0.8980, val acc=0.7000, val F1=0.6778, seconds=1.6
+epoch 152: train loss=1.0108, val acc=0.8111, val F1=0.8041, seconds=1.9
+epoch 153: train loss=0.9268, val acc=0.7667, val F1=0.7584, seconds=1.9
+epoch 154: train loss=0.8756, val acc=0.7722, val F1=0.7596, seconds=1.7
+epoch 155: train loss=0.7931, val acc=0.8278, val F1=0.8164, seconds=1.6
+epoch 156: train loss=0.8646, val acc=0.7556, val F1=0.7442, seconds=1.6
+epoch 157: train loss=0.7953, val acc=0.7556, val F1=0.7425, seconds=1.7
+epoch 158: train loss=0.8640, val acc=0.8111, val F1=0.8067, seconds=1.9
+epoch 159: train loss=0.8534, val acc=0.7833, val F1=0.7789, seconds=1.6
+epoch 160: train loss=0.8774, val acc=0.7722, val F1=0.7640, seconds=1.6
+epoch 161: train loss=0.7344, val acc=0.8222, val F1=0.8181, seconds=1.9
+epoch 162: train loss=0.8324, val acc=0.8278, val F1=0.8194, seconds=1.7
+epoch 163: train loss=0.7318, val acc=0.7556, val F1=0.7405, seconds=1.6
+epoch 164: train loss=0.8546, val acc=0.8111, val F1=0.8103, seconds=2.2
+epoch 165: train loss=0.7442, val acc=0.7444, val F1=0.7320, seconds=1.7
+epoch 166: train loss=0.7794, val acc=0.6611, val F1=0.6437, seconds=1.7
+epoch 167: train loss=0.9867, val acc=0.7778, val F1=0.7697, seconds=1.6
+epoch 168: train loss=0.7443, val acc=0.7944, val F1=0.7774, seconds=2.0
+epoch 169: train loss=0.8548, val acc=0.7444, val F1=0.7235, seconds=1.6
+epoch 170: train loss=0.7635, val acc=0.7611, val F1=0.7500, seconds=1.9
+epoch 171: train loss=1.0303, val acc=0.3444, val F1=0.2522, seconds=1.8
+epoch 172: train loss=1.2861, val acc=0.7833, val F1=0.7765, seconds=1.7
+epoch 173: train loss=0.9270, val acc=0.7667, val F1=0.7598, seconds=1.7
+epoch 174: train loss=0.8531, val acc=0.8333, val F1=0.8316, seconds=1.6
+epoch 175: train loss=0.6780, val acc=0.7944, val F1=0.7896, seconds=1.6
+epoch 176: train loss=0.6402, val acc=0.8611, val F1=0.8542, seconds=1.7
+epoch 177: train loss=0.7205, val acc=0.8167, val F1=0.8121, seconds=1.7
+epoch 178: train loss=0.9069, val acc=0.7611, val F1=0.7496, seconds=1.6
+epoch 179: train loss=0.8567, val acc=0.8222, val F1=0.8200, seconds=2.2
+epoch 180: train loss=0.7249, val acc=0.8333, val F1=0.8303, seconds=1.8
+epoch 181: train loss=0.8069, val acc=0.4444, val F1=0.3649, seconds=1.6
+epoch 182: train loss=1.2407, val acc=0.7778, val F1=0.7625, seconds=1.6
+epoch 183: train loss=0.7386, val acc=0.8222, val F1=0.8188, seconds=1.6
+epoch 184: train loss=0.6788, val acc=0.8056, val F1=0.7950, seconds=2.0
+epoch 185: train loss=0.7394, val acc=0.7500, val F1=0.7392, seconds=1.9
+epoch 186: train loss=0.8206, val acc=0.7556, val F1=0.7348, seconds=1.6
+epoch 187: train loss=0.6377, val acc=0.8778, val F1=0.8723, seconds=1.6
+epoch 188: train loss=0.7117, val acc=0.8278, val F1=0.8204, seconds=1.6
+epoch 189: train loss=0.7149, val acc=0.7889, val F1=0.7835, seconds=2.0
+epoch 190: train loss=0.6765, val acc=0.7667, val F1=0.7487, seconds=1.6
+epoch 191: train loss=0.7447, val acc=0.8111, val F1=0.8019, seconds=1.9
+epoch 192: train loss=0.7629, val acc=0.8556, val F1=0.8470, seconds=1.6
+epoch 193: train loss=0.6535, val acc=0.8444, val F1=0.8360, seconds=2.0
+epoch 194: train loss=0.6594, val acc=0.8444, val F1=0.8387, seconds=1.6
+epoch 195: train loss=0.4937, val acc=0.8111, val F1=0.7940, seconds=1.6
+epoch 196: train loss=0.5244, val acc=0.8222, val F1=0.8179, seconds=1.6
+epoch 197: train loss=0.5788, val acc=0.8556, val F1=0.8529, seconds=1.6
+epoch 198: train loss=0.5795, val acc=0.8833, val F1=0.8802, seconds=2.0
+epoch 199: train loss=0.6216, val acc=0.8167, val F1=0.8041, seconds=1.7
+epoch 200: train loss=0.5491, val acc=0.8278, val F1=0.8247, seconds=1.6
+epoch 201: train loss=0.5492, val acc=0.8944, val F1=0.8889, seconds=1.6
+epoch 202: train loss=0.7361, val acc=0.7667, val F1=0.7580, seconds=1.8
+epoch 203: train loss=0.6945, val acc=0.8056, val F1=0.7924, seconds=1.9
+epoch 204: train loss=0.5253, val acc=0.8667, val F1=0.8599, seconds=1.8
+epoch 205: train loss=0.4864, val acc=0.8444, val F1=0.8429, seconds=1.6
+epoch 206: train loss=0.4474, val acc=0.8389, val F1=0.8324, seconds=1.8
+epoch 207: train loss=0.5894, val acc=0.9056, val F1=0.9027, seconds=1.6
+epoch 208: train loss=0.4836, val acc=0.8222, val F1=0.8065, seconds=1.6
+epoch 209: train loss=0.4890, val acc=0.8889, val F1=0.8855, seconds=1.6
+epoch 210: train loss=0.5863, val acc=0.8278, val F1=0.8203, seconds=2.2
+epoch 211: train loss=0.5350, val acc=0.7889, val F1=0.7803, seconds=1.8
+epoch 212: train loss=0.4445, val acc=0.8556, val F1=0.8561, seconds=1.6
+epoch 213: train loss=0.4414, val acc=0.8722, val F1=0.8678, seconds=1.6
+epoch 214: train loss=0.4297, val acc=0.8889, val F1=0.8850, seconds=1.7
+epoch 215: train loss=0.4540, val acc=0.8556, val F1=0.8494, seconds=2.1
+epoch 216: train loss=0.4952, val acc=0.8611, val F1=0.8533, seconds=1.7
+epoch 217: train loss=0.4791, val acc=0.8500, val F1=0.8493, seconds=1.6
+epoch 218: train loss=0.5029, val acc=0.8889, val F1=0.8804, seconds=1.7
+epoch 219: train loss=0.4916, val acc=0.8222, val F1=0.8119, seconds=1.6
+epoch 220: train loss=0.5649, val acc=0.7833, val F1=0.7726, seconds=1.7
+epoch 221: train loss=0.5288, val acc=0.7278, val F1=0.6976, seconds=1.6
+epoch 222: train loss=0.5243, val acc=0.8333, val F1=0.8277, seconds=1.7
+epoch 223: train loss=0.4973, val acc=0.8444, val F1=0.8367, seconds=2.0
+epoch 224: train loss=0.4465, val acc=0.8556, val F1=0.8545, seconds=1.8
+epoch 225: train loss=0.4918, val acc=0.7944, val F1=0.7902, seconds=1.6
+epoch 226: train loss=0.4885, val acc=0.8722, val F1=0.8701, seconds=1.6
+epoch 227: train loss=0.4161, val acc=0.8611, val F1=0.8530, seconds=1.7
+epoch 228: train loss=0.4401, val acc=0.8556, val F1=0.8527, seconds=1.9
+epoch 229: train loss=0.4181, val acc=0.8833, val F1=0.8787, seconds=1.6
+epoch 230: train loss=0.4157, val acc=0.8889, val F1=0.8858, seconds=1.7
+epoch 231: train loss=0.5029, val acc=0.8778, val F1=0.8750, seconds=1.6
+epoch 232: train loss=0.4873, val acc=0.8556, val F1=0.8533, seconds=2.0
+epoch 233: train loss=0.4929, val acc=0.8500, val F1=0.8454, seconds=1.7
+epoch 234: train loss=0.4022, val acc=0.8889, val F1=0.8868, seconds=1.6
+epoch 235: train loss=0.4207, val acc=0.8722, val F1=0.8621, seconds=2.2
+epoch 236: train loss=0.3666, val acc=0.8944, val F1=0.8887, seconds=1.9
+epoch 237: train loss=0.5673, val acc=0.8056, val F1=0.7993, seconds=1.8
+epoch 238: train loss=0.4804, val acc=0.9056, val F1=0.9024, seconds=1.8
+epoch 239: train loss=0.5031, val acc=0.8889, val F1=0.8878, seconds=1.6
+epoch 240: train loss=0.4429, val acc=0.9056, val F1=0.9038, seconds=1.6
+epoch 241: train loss=0.4595, val acc=0.8944, val F1=0.8919, seconds=1.6
+epoch 242: train loss=0.3801, val acc=0.8944, val F1=0.8931, seconds=1.9
+epoch 243: train loss=0.3135, val acc=0.9167, val F1=0.9161, seconds=1.7
+epoch 244: train loss=0.3326, val acc=0.8389, val F1=0.8276, seconds=1.8
+epoch 245: train loss=0.3252, val acc=0.8611, val F1=0.8637, seconds=1.7
+epoch 246: train loss=0.3054, val acc=0.9222, val F1=0.9193, seconds=2.0
+epoch 247: train loss=0.3254, val acc=0.8722, val F1=0.8716, seconds=1.6
+epoch 248: train loss=0.3612, val acc=0.8111, val F1=0.8132, seconds=1.6
+epoch 249: train loss=0.3988, val acc=0.9056, val F1=0.9025, seconds=2.1
+epoch 250: train loss=0.3611, val acc=0.8722, val F1=0.8638, seconds=1.9
+epoch 251: train loss=0.3168, val acc=0.8778, val F1=0.8764, seconds=1.6
+epoch 252: train loss=0.5631, val acc=0.7278, val F1=0.7016, seconds=1.6
+epoch 253: train loss=0.4560, val acc=0.8611, val F1=0.8595, seconds=3.0
+epoch 254: train loss=0.3365, val acc=0.8667, val F1=0.8657, seconds=1.8
+epoch 255: train loss=0.3375, val acc=0.9278, val F1=0.9258, seconds=1.9
+epoch 256: train loss=0.3962, val acc=0.8944, val F1=0.8913, seconds=1.9
+epoch 257: train loss=0.3705, val acc=0.8722, val F1=0.8718, seconds=1.6
+epoch 258: train loss=0.7041, val acc=0.8556, val F1=0.8487, seconds=1.9
+epoch 259: train loss=0.4482, val acc=0.8889, val F1=0.8859, seconds=2.1
+epoch 260: train loss=0.3749, val acc=0.9000, val F1=0.8982, seconds=1.8
+epoch 261: train loss=0.4061, val acc=0.8889, val F1=0.8864, seconds=1.6
+epoch 262: train loss=0.3187, val acc=0.9056, val F1=0.9026, seconds=1.6
+epoch 263: train loss=0.2432, val acc=0.9000, val F1=0.8967, seconds=1.7
+epoch 264: train loss=0.3067, val acc=0.9389, val F1=0.9368, seconds=2.0
+epoch 265: train loss=0.3048, val acc=0.9222, val F1=0.9197, seconds=1.7
+epoch 266: train loss=0.2500, val acc=0.8944, val F1=0.8933, seconds=1.7
+epoch 267: train loss=0.3422, val acc=0.8833, val F1=0.8800, seconds=1.6
+epoch 268: train loss=0.2638, val acc=0.9333, val F1=0.9328, seconds=2.0
+epoch 269: train loss=0.2513, val acc=0.9111, val F1=0.9102, seconds=1.7
+epoch 270: train loss=0.3249, val acc=0.9389, val F1=0.9370, seconds=1.6
+epoch 271: train loss=0.3203, val acc=0.9167, val F1=0.9152, seconds=1.6
+epoch 272: train loss=0.2184, val acc=0.8667, val F1=0.8648, seconds=2.0
+epoch 273: train loss=0.2851, val acc=0.9056, val F1=0.9052, seconds=1.8
+epoch 274: train loss=0.2546, val acc=0.9056, val F1=0.9018, seconds=1.6
+epoch 275: train loss=0.3739, val acc=0.8722, val F1=0.8625, seconds=1.6
+epoch 276: train loss=0.4384, val acc=0.9000, val F1=0.8941, seconds=2.0
+epoch 277: train loss=0.4200, val acc=0.9167, val F1=0.9142, seconds=1.8
+epoch 278: train loss=0.2950, val acc=0.8778, val F1=0.8743, seconds=1.6
+epoch 279: train loss=0.2784, val acc=0.8944, val F1=0.8919, seconds=1.6
+epoch 280: train loss=0.3168, val acc=0.9222, val F1=0.9208, seconds=1.6
+epoch 281: train loss=0.2891, val acc=0.9278, val F1=0.9244, seconds=1.9
+epoch 282: train loss=0.3113, val acc=0.8889, val F1=0.8866, seconds=1.7
+epoch 283: train loss=0.2698, val acc=0.9222, val F1=0.9203, seconds=1.7
+epoch 284: train loss=0.2750, val acc=0.9222, val F1=0.9195, seconds=3.3
+epoch 285: train loss=0.3020, val acc=0.9000, val F1=0.8983, seconds=1.9
+epoch 286: train loss=0.2669, val acc=0.8833, val F1=0.8805, seconds=2.3
+epoch 287: train loss=0.3375, val acc=0.8833, val F1=0.8704, seconds=1.9
+epoch 288: train loss=0.3184, val acc=0.8833, val F1=0.8748, seconds=1.7
+epoch 289: train loss=0.9397, val acc=0.7389, val F1=0.7283, seconds=1.7
+epoch 290: train loss=0.4744, val acc=0.8722, val F1=0.8683, seconds=1.9
+epoch 291: train loss=0.4197, val acc=0.9000, val F1=0.8900, seconds=1.9
+epoch 292: train loss=0.2726, val acc=0.9222, val F1=0.9188, seconds=1.6
+epoch 293: train loss=0.3470, val acc=0.8944, val F1=0.8923, seconds=1.6
+epoch 294: train loss=0.3688, val acc=0.8778, val F1=0.8701, seconds=1.6
+epoch 295: train loss=0.3426, val acc=0.8833, val F1=0.8812, seconds=1.9
+epoch 296: train loss=0.3037, val acc=0.8889, val F1=0.8826, seconds=1.8
+epoch 297: train loss=0.2605, val acc=0.9000, val F1=0.8967, seconds=1.6
+epoch 298: train loss=0.2222, val acc=0.9167, val F1=0.9138, seconds=1.7
+epoch 299: train loss=0.1861, val acc=0.9111, val F1=0.9084, seconds=2.0
+epoch 300: train loss=0.2482, val acc=0.9167, val F1=0.9123, seconds=1.8
+epoch 301: train loss=0.5169, val acc=0.8111, val F1=0.7976, seconds=1.7
+epoch 302: train loss=0.4931, val acc=0.9000, val F1=0.8971, seconds=1.6
+epoch 303: train loss=0.3589, val acc=0.8667, val F1=0.8628, seconds=2.0
+epoch 304: train loss=0.3267, val acc=0.8722, val F1=0.8669, seconds=1.8
+epoch 305: train loss=0.3414, val acc=0.8778, val F1=0.8672, seconds=1.6
+epoch 306: train loss=0.2570, val acc=0.9000, val F1=0.8971, seconds=1.6
+epoch 307: train loss=0.2552, val acc=0.8889, val F1=0.8819, seconds=1.6
+epoch 308: train loss=0.2338, val acc=0.8889, val F1=0.8820, seconds=1.9
+epoch 309: train loss=0.2702, val acc=0.9000, val F1=0.8955, seconds=1.7
+epoch 310: train loss=0.2640, val acc=0.9389, val F1=0.9333, seconds=1.6
+epoch 311: train loss=0.1776, val acc=0.9222, val F1=0.9200, seconds=1.6
+epoch 312: train loss=0.2227, val acc=0.9222, val F1=0.9201, seconds=1.6
+epoch 313: train loss=0.2859, val acc=0.8889, val F1=0.8835, seconds=2.0
+epoch 314: train loss=0.2398, val acc=0.9222, val F1=0.9218, seconds=1.6
+epoch 315: train loss=0.2508, val acc=0.9111, val F1=0.9083, seconds=1.6
+epoch 316: train loss=0.1754, val acc=0.8889, val F1=0.8849, seconds=1.6
+epoch 317: train loss=0.2576, val acc=0.9278, val F1=0.9266, seconds=1.8
+epoch 318: train loss=0.2570, val acc=0.9222, val F1=0.9210, seconds=2.0
+epoch 319: train loss=0.1918, val acc=0.9222, val F1=0.9198, seconds=2.1
+epoch 320: train loss=0.3376, val acc=0.8722, val F1=0.8672, seconds=1.9
+epoch 321: train loss=0.3005, val acc=0.9000, val F1=0.8976, seconds=1.6
+epoch 322: train loss=0.2405, val acc=0.9389, val F1=0.9363, seconds=1.6
+epoch 323: train loss=0.2464, val acc=0.9333, val F1=0.9310, seconds=1.9
+epoch 324: train loss=0.2108, val acc=0.8944, val F1=0.8908, seconds=2.0
+epoch 325: train loss=0.2170, val acc=0.9333, val F1=0.9322, seconds=1.7
+epoch 326: train loss=0.1620, val acc=0.9111, val F1=0.9098, seconds=1.6
+epoch 327: train loss=0.2622, val acc=0.8944, val F1=0.8917, seconds=1.6
+epoch 328: train loss=0.2395, val acc=0.9000, val F1=0.8978, seconds=2.0
+epoch 329: train loss=0.2407, val acc=0.8778, val F1=0.8735, seconds=1.7
+epoch 330: train loss=0.2222, val acc=0.9000, val F1=0.8983, seconds=1.6
+epoch 331: train loss=0.2367, val acc=0.9111, val F1=0.9076, seconds=1.7
+epoch 332: train loss=0.2773, val acc=0.8889, val F1=0.8855, seconds=1.9
+epoch 333: train loss=0.1700, val acc=0.9111, val F1=0.9084, seconds=1.7
+epoch 334: train loss=0.2101, val acc=0.9000, val F1=0.8942, seconds=1.6
+epoch 335: train loss=0.2654, val acc=0.8889, val F1=0.8838, seconds=1.6
+epoch 336: train loss=0.2531, val acc=0.8722, val F1=0.8736, seconds=1.7
+epoch 337: train loss=0.2640, val acc=0.9333, val F1=0.9303, seconds=2.1
+epoch 338: train loss=0.1968, val acc=0.9111, val F1=0.9074, seconds=1.6
+epoch 339: train loss=0.2555, val acc=0.9278, val F1=0.9274, seconds=1.6
+epoch 340: train loss=0.1970, val acc=0.9278, val F1=0.9265, seconds=1.7
+epoch 341: train loss=0.2350, val acc=0.9167, val F1=0.9136, seconds=1.9
+epoch 342: train loss=0.2058, val acc=0.9167, val F1=0.9127, seconds=2.0
+epoch 343: train loss=0.2195, val acc=0.9167, val F1=0.9136, seconds=1.7
+epoch 344: train loss=0.2579, val acc=0.8778, val F1=0.8728, seconds=1.7
+epoch 345: train loss=0.2186, val acc=0.9056, val F1=0.9013, seconds=1.8
+epoch 346: train loss=0.1736, val acc=0.9222, val F1=0.9197, seconds=1.8
+epoch 347: train loss=0.2603, val acc=0.8500, val F1=0.8455, seconds=1.6
+epoch 348: train loss=0.1994, val acc=0.8667, val F1=0.8665, seconds=1.6
+epoch 349: train loss=0.1689, val acc=0.9278, val F1=0.9261, seconds=1.7
+epoch 350: train loss=0.2143, val acc=0.8889, val F1=0.8887, seconds=1.9
+epoch 351: train loss=0.2531, val acc=0.9000, val F1=0.8985, seconds=1.7
+epoch 352: train loss=0.3002, val acc=0.8667, val F1=0.8614, seconds=1.7
+epoch 353: train loss=0.2768, val acc=0.8833, val F1=0.8818, seconds=1.6
+epoch 354: train loss=0.1815, val acc=0.8778, val F1=0.8752, seconds=1.8
+epoch 355: train loss=0.1993, val acc=0.9056, val F1=0.9033, seconds=1.7
+epoch 356: train loss=0.1848, val acc=0.9222, val F1=0.9189, seconds=1.6
+epoch 357: train loss=0.2626, val acc=0.8778, val F1=0.8733, seconds=1.6
+epoch 358: train loss=0.2362, val acc=0.9278, val F1=0.9255, seconds=1.9
+epoch 359: train loss=0.2638, val acc=0.9167, val F1=0.9158, seconds=1.6
+epoch 360: train loss=0.2038, val acc=0.9111, val F1=0.9077, seconds=1.6
+epoch 361: train loss=0.2360, val acc=0.9000, val F1=0.8974, seconds=1.7
+epoch 362: train loss=0.2231, val acc=0.9167, val F1=0.9147, seconds=2.0
+epoch 363: train loss=0.2537, val acc=0.9056, val F1=0.9039, seconds=1.6
+epoch 364: train loss=0.1907, val acc=0.9222, val F1=0.9195, seconds=1.6
+epoch 365: train loss=0.2255, val acc=0.9000, val F1=0.8982, seconds=1.8
+epoch 366: train loss=0.1751, val acc=0.9333, val F1=0.9310, seconds=1.9
+epoch 367: train loss=0.2226, val acc=0.9222, val F1=0.9218, seconds=1.6
+epoch 368: train loss=0.1605, val acc=0.9333, val F1=0.9318, seconds=1.7
+epoch 369: train loss=0.1554, val acc=0.9389, val F1=0.9380, seconds=1.7
+epoch 370: train loss=0.1566, val acc=0.9333, val F1=0.9321, seconds=1.8
+epoch 371: train loss=0.1863, val acc=0.9056, val F1=0.9045, seconds=2.1
+epoch 372: train loss=0.1877, val acc=0.9056, val F1=0.9043, seconds=2.0
+epoch 373: train loss=0.2083, val acc=0.9167, val F1=0.9128, seconds=1.8
+epoch 374: train loss=0.2668, val acc=0.9000, val F1=0.8965, seconds=1.7
+epoch 375: train loss=0.3139, val acc=0.8778, val F1=0.8619, seconds=1.7
+epoch 376: train loss=0.3331, val acc=0.9333, val F1=0.9309, seconds=1.6
+epoch 377: train loss=0.1792, val acc=0.8944, val F1=0.8967, seconds=1.6
+epoch 378: train loss=0.2068, val acc=0.9333, val F1=0.9285, seconds=2.1
+epoch 379: train loss=0.2250, val acc=0.9278, val F1=0.9262, seconds=1.8
+epoch 380: train loss=0.1688, val acc=0.9222, val F1=0.9200, seconds=1.6
+epoch 381: train loss=0.1656, val acc=0.9278, val F1=0.9250, seconds=1.7
+epoch 382: train loss=0.1450, val acc=0.9444, val F1=0.9429, seconds=1.6
+epoch 383: train loss=0.1814, val acc=0.9333, val F1=0.9314, seconds=1.9
+epoch 384: train loss=0.1560, val acc=0.9278, val F1=0.9237, seconds=1.8
+epoch 385: train loss=0.1903, val acc=0.9444, val F1=0.9437, seconds=1.6
+epoch 386: train loss=0.1705, val acc=0.9500, val F1=0.9493, seconds=1.7
+epoch 387: train loss=0.1914, val acc=0.9278, val F1=0.9270, seconds=2.2
+epoch 388: train loss=0.1745, val acc=0.9111, val F1=0.9113, seconds=1.7
+epoch 389: train loss=0.1492, val acc=0.9556, val F1=0.9549, seconds=1.7
+epoch 390: train loss=0.1306, val acc=0.9444, val F1=0.9436, seconds=1.8
+epoch 391: train loss=0.1328, val acc=0.9611, val F1=0.9608, seconds=2.0
+epoch 392: train loss=0.1059, val acc=0.9500, val F1=0.9498, seconds=1.7
+epoch 393: train loss=0.1087, val acc=0.9556, val F1=0.9550, seconds=1.6
+epoch 394: train loss=0.1254, val acc=0.9222, val F1=0.9199, seconds=2.1
+epoch 395: train loss=0.1488, val acc=0.9444, val F1=0.9433, seconds=2.1
+epoch 396: train loss=0.1655, val acc=0.9556, val F1=0.9552, seconds=1.8
+epoch 397: train loss=0.1463, val acc=0.9556, val F1=0.9553, seconds=2.2
+epoch 398: train loss=0.1203, val acc=0.9500, val F1=0.9493, seconds=1.7
+epoch 399: train loss=0.1489, val acc=0.9111, val F1=0.9081, seconds=1.7
+epoch 400: train loss=0.1757, val acc=0.9056, val F1=0.9072, seconds=1.6
+epoch 401: train loss=0.1564, val acc=0.8944, val F1=0.8932, seconds=2.0
+epoch 402: train loss=0.1570, val acc=0.9222, val F1=0.9195, seconds=1.7
+epoch 403: train loss=0.2165, val acc=0.9111, val F1=0.9085, seconds=1.7
+epoch 404: train loss=0.2627, val acc=0.9167, val F1=0.9116, seconds=1.7
+epoch 405: train loss=0.1658, val acc=0.9167, val F1=0.9167, seconds=1.9
+epoch 406: train loss=0.1550, val acc=0.9389, val F1=0.9363, seconds=1.9
+epoch 407: train loss=0.3652, val acc=0.9167, val F1=0.9097, seconds=1.6
+epoch 408: train loss=0.2379, val acc=0.9222, val F1=0.9160, seconds=1.7
+epoch 409: train loss=0.2220, val acc=0.9222, val F1=0.9184, seconds=2.1
+epoch 410: train loss=0.1448, val acc=0.9333, val F1=0.9304, seconds=1.9
+epoch 411: train loss=0.1470, val acc=0.9389, val F1=0.9361, seconds=1.7
+epoch 412: train loss=0.2185, val acc=0.9056, val F1=0.9032, seconds=1.6
+epoch 413: train loss=0.1521, val acc=0.9556, val F1=0.9550, seconds=1.7
+epoch 414: train loss=0.1389, val acc=0.9500, val F1=0.9457, seconds=1.7
+epoch 415: train loss=0.1241, val acc=0.9500, val F1=0.9493, seconds=1.6
+epoch 416: train loss=0.2269, val acc=0.9389, val F1=0.9361, seconds=1.6
+epoch 417: train loss=0.1894, val acc=0.9389, val F1=0.9375, seconds=1.7
+epoch 418: train loss=0.1044, val acc=0.9444, val F1=0.9436, seconds=1.9
+epoch 419: train loss=0.1153, val acc=0.9389, val F1=0.9370, seconds=1.6
+epoch 420: train loss=0.1532, val acc=0.9056, val F1=0.9033, seconds=1.6
+epoch 421: train loss=0.2335, val acc=0.8944, val F1=0.8912, seconds=2.7
+epoch 422: train loss=0.1956, val acc=0.9111, val F1=0.9089, seconds=1.9
+epoch 423: train loss=0.1593, val acc=0.8944, val F1=0.8870, seconds=1.7
+epoch 424: train loss=0.1375, val acc=0.9222, val F1=0.9185, seconds=2.1
+epoch 425: train loss=0.1158, val acc=0.9444, val F1=0.9426, seconds=1.6
+epoch 426: train loss=0.2637, val acc=0.8833, val F1=0.8806, seconds=1.7
+epoch 427: train loss=0.2184, val acc=0.9333, val F1=0.9288, seconds=1.6
+epoch 428: train loss=0.1617, val acc=0.9222, val F1=0.9174, seconds=1.9
+epoch 429: train loss=0.1547, val acc=0.9111, val F1=0.9068, seconds=1.7
+epoch 430: train loss=0.1530, val acc=0.9444, val F1=0.9429, seconds=1.6
+epoch 431: train loss=0.1127, val acc=0.9389, val F1=0.9364, seconds=1.6
+epoch 432: train loss=0.0850, val acc=0.9389, val F1=0.9365, seconds=1.9
+epoch 433: train loss=0.0797, val acc=0.9444, val F1=0.9427, seconds=1.7
+epoch 434: train loss=0.1173, val acc=0.9333, val F1=0.9317, seconds=1.6
+epoch 435: train loss=0.0892, val acc=0.9222, val F1=0.9205, seconds=1.6
+epoch 436: train loss=0.1170, val acc=0.9389, val F1=0.9373, seconds=1.8
+epoch 437: train loss=0.1277, val acc=0.8778, val F1=0.8727, seconds=1.6
+epoch 438: train loss=0.1902, val acc=0.8889, val F1=0.8832, seconds=1.6
+epoch 439: train loss=0.1284, val acc=0.9389, val F1=0.9372, seconds=1.9
+epoch 440: train loss=0.1559, val acc=0.9222, val F1=0.9208, seconds=1.8
+epoch 441: train loss=0.1108, val acc=0.9222, val F1=0.9191, seconds=1.7
+epoch 442: train loss=0.1269, val acc=0.9500, val F1=0.9483, seconds=1.6
+epoch 443: train loss=0.1046, val acc=0.9278, val F1=0.9251, seconds=1.8
+epoch 444: train loss=0.1095, val acc=0.9278, val F1=0.9275, seconds=1.9
+epoch 445: train loss=0.0779, val acc=0.9333, val F1=0.9314, seconds=1.7
+epoch 446: train loss=0.1775, val acc=0.9278, val F1=0.9262, seconds=1.7
+epoch 447: train loss=0.1230, val acc=0.9444, val F1=0.9423, seconds=1.6
+epoch 448: train loss=0.1274, val acc=0.9333, val F1=0.9311, seconds=2.0
+epoch 449: train loss=0.1344, val acc=0.9333, val F1=0.9306, seconds=1.7
+epoch 450: train loss=0.1684, val acc=0.9444, val F1=0.9436, seconds=1.6
+epoch 451: train loss=0.2025, val acc=0.8833, val F1=0.8801, seconds=1.6
+epoch 452: train loss=0.1451, val acc=0.9278, val F1=0.9269, seconds=1.7
+epoch 453: train loss=0.0655, val acc=0.9556, val F1=0.9539, seconds=2.1
+epoch 454: train loss=0.1146, val acc=0.9278, val F1=0.9251, seconds=1.6
+epoch 455: train loss=0.1505, val acc=0.9333, val F1=0.9319, seconds=1.7
+epoch 456: train loss=0.1702, val acc=0.9278, val F1=0.9258, seconds=1.6
+epoch 457: train loss=0.1447, val acc=0.9056, val F1=0.9036, seconds=2.0
+epoch 458: train loss=0.0907, val acc=0.9389, val F1=0.9379, seconds=1.8
+epoch 459: train loss=0.1153, val acc=0.9333, val F1=0.9316, seconds=1.6
+epoch 460: train loss=0.0782, val acc=0.9389, val F1=0.9372, seconds=1.6
+epoch 461: train loss=0.1053, val acc=0.9222, val F1=0.9200, seconds=2.0
+epoch 462: train loss=0.1379, val acc=0.9278, val F1=0.9259, seconds=1.9
+epoch 463: train loss=0.0767, val acc=0.9278, val F1=0.9265, seconds=1.6
+epoch 464: train loss=0.1002, val acc=0.9333, val F1=0.9312, seconds=1.6
+epoch 465: train loss=0.0517, val acc=0.9500, val F1=0.9475, seconds=1.9
+epoch 466: train loss=0.1097, val acc=0.9056, val F1=0.9042, seconds=1.6
+epoch 467: train loss=0.1394, val acc=0.9222, val F1=0.9197, seconds=1.6
+epoch 468: train loss=0.1021, val acc=0.9556, val F1=0.9536, seconds=1.6
+epoch 469: train loss=0.1360, val acc=0.9389, val F1=0.9385, seconds=2.1
+epoch 470: train loss=0.0826, val acc=0.9278, val F1=0.9273, seconds=1.7
+epoch 471: train loss=0.1048, val acc=0.9111, val F1=0.9096, seconds=1.7
+epoch 472: train loss=0.1129, val acc=0.9111, val F1=0.9109, seconds=1.7
+epoch 473: train loss=0.1713, val acc=0.9222, val F1=0.9196, seconds=2.0
+epoch 474: train loss=0.1174, val acc=0.9278, val F1=0.9253, seconds=1.9
+epoch 475: train loss=0.1126, val acc=0.9500, val F1=0.9487, seconds=1.7
+epoch 476: train loss=0.1030, val acc=0.9167, val F1=0.9156, seconds=1.7
+epoch 477: train loss=0.1322, val acc=0.8722, val F1=0.8654, seconds=2.0
+epoch 478: train loss=0.1083, val acc=0.9556, val F1=0.9536, seconds=1.8
+epoch 479: train loss=0.0905, val acc=0.9444, val F1=0.9431, seconds=1.6
+epoch 480: train loss=0.0536, val acc=0.9278, val F1=0.9260, seconds=2.3
+epoch 481: train loss=0.0526, val acc=0.9444, val F1=0.9426, seconds=2.0
+epoch 482: train loss=0.0715, val acc=0.9222, val F1=0.9203, seconds=1.7
+epoch 483: train loss=0.1147, val acc=0.9167, val F1=0.9156, seconds=2.0
+epoch 484: train loss=0.1130, val acc=0.9167, val F1=0.9110, seconds=1.6
+epoch 485: train loss=0.1143, val acc=0.9278, val F1=0.9258, seconds=1.7
+epoch 486: train loss=0.1463, val acc=0.9222, val F1=0.9217, seconds=1.8
+epoch 487: train loss=0.1123, val acc=0.9056, val F1=0.9043, seconds=2.0
+epoch 488: train loss=0.0917, val acc=0.9000, val F1=0.8980, seconds=1.7
+epoch 489: train loss=0.1153, val acc=0.9444, val F1=0.9434, seconds=1.7
+epoch 490: train loss=0.0963, val acc=0.9278, val F1=0.9241, seconds=2.0
+epoch 491: train loss=0.0945, val acc=0.9333, val F1=0.9307, seconds=1.7
+Early stopping on validation
+Best validation epoch=391, macro-F1=0.9608. Training complete=True. Test has not been evaluated.

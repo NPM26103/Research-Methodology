@@ -1,0 +1,1 @@
+WAV files are float32 at 44100 Hz, with the exact inference amplitudes. Do not independently normalize playback clips when comparing. Use IPython Audio(path, normalize=False). Images share amplitude/color scales within each sample. Examples were fixed before seeing outcomes.

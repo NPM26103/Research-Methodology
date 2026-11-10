@@ -1,0 +1,11 @@
+{
+  "method": "RMS prominence candidates",
+  "sample_rate": 44100,
+  "window": 256,
+  "hop": 128,
+  "smooth_frames": 3,
+  "before": 2400,
+  "clip_samples": 14400,
+  "overrides": {},
+  "raw_source": "/content/rsm_data/seed26/raw/MBPWavs"
+}

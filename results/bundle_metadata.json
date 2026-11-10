@@ -1,0 +1,35 @@
+{
+  "created_utc": "2026-11-09T13:05:05.596814+00:00",
+  "export_scope": "all",
+  "master_seed": 26,
+  "checkpoint_sha256": "37dec22f1383d3e19fa811773e8caaa275409c7e55556ac2f177d77fa511b212",
+  "includes_checkpoint": true,
+  "contains_validation_diagnostics": true,
+  "results": [
+    {
+      "name": "main_test",
+      "partition": "test",
+      "rows": 2340,
+      "checkpoint_sha256": "37dec22f1383d3e19fa811773e8caaa275409c7e55556ac2f177d77fa511b212",
+      "master_seed": 26,
+      "data_hashes": {
+        "manifest_sha256": "98c223b2c6ee0835faa3ceb1ede9b3ea845ef3bddffc75914d54cdabf53e308d",
+        "split_sha256": "ace01f200205abbb18fb6abf4af0b18dfcb57386045078e80a8543d3e957ffa1",
+        "label_map_sha256": "78d0ff0eb329c67120b98027d1dec8f5a853b643833b18d5974bcd0fe1c8b2a4"
+      }
+    },
+    {
+      "name": "exploratory_validation",
+      "partition": "val",
+      "rows": 5220,
+      "checkpoint_sha256": "37dec22f1383d3e19fa811773e8caaa275409c7e55556ac2f177d77fa511b212",
+      "master_seed": 26,
+      "data_hashes": {
+        "manifest_sha256": "98c223b2c6ee0835faa3ceb1ede9b3ea845ef3bddffc75914d54cdabf53e308d",
+        "split_sha256": "ace01f200205abbb18fb6abf4af0b18dfcb57386045078e80a8543d3e957ffa1",
+        "label_map_sha256": "78d0ff0eb329c67120b98027d1dec8f5a853b643833b18d5974bcd0fe1c8b2a4"
+      }
+    }
+  ],
+  "interpretation": "Main test and exploratory validation are separate analyses; do not pool their predictions."
+}

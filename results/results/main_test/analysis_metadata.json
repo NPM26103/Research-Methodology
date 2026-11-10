@@ -1,0 +1,11 @@
+{
+  "partition": "test",
+  "analysis_role": "main_test_experiment",
+  "bootstrap_repetitions": 10000,
+  "bootstrap_seed": 26,
+  "master_seed": 26,
+  "stratified_by": "true class; paired by sample",
+  "ci_scope": "Fixed checkpoint, recordings and Gaussian replicate streams; does not cover training-seed/session variability.",
+  "main_test_primary_snr_db": 20,
+  "note": "Validation diagnostics are exploratory and cannot replace the primary test comparison. Disclose prior inspection of this dataset; reconstructing a split does not create a new unseen dataset. Uniform-guess accuracy does not imply uniform predictions."
+}

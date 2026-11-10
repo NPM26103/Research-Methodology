@@ -1,0 +1,8 @@
+target_snr,difference_pp,ci_low_pp,ci_high_pp,n,gaussian_replicates,master_seed,reference_to_main_test_snr,interpretation,analysis_role
+60,76.85185185185186,71.4814814814815,82.22222222222221,180,3,26,False,supports_direction,exploratory_validation_diagnostics
+50,52.407407407407405,46.296296296296305,58.51851851851851,180,3,26,False,supports_direction,exploratory_validation_diagnostics
+40,14.999999999999996,11.296296296296298,18.703703703703702,180,3,26,False,supports_direction,exploratory_validation_diagnostics
+35,4.629629629629629,2.7777777777777772,6.666666666666667,180,3,26,False,supports_direction,exploratory_validation_diagnostics
+30,0.7407407407407404,-0.7407407407407409,2.4074074074074074,180,3,26,False,inconclusive,exploratory_validation_diagnostics
+20,-0.5555555555555556,-1.6666666666666667,0.0,180,3,26,True,inconclusive,exploratory_validation_diagnostics
+10,0.5555555555555554,-0.925925925925926,1.6666666666666667,180,3,26,False,inconclusive,exploratory_validation_diagnostics

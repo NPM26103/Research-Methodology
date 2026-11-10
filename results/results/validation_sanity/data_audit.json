@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "clips": 901,
+  "accepted": 901,
+  "classes": 36,
+  "split_counts": {
+    "train": 541,
+    "test": 180,
+    "val": 180
+  },
+  "data_hashes": {
+    "manifest_sha256": "98c223b2c6ee0835faa3ceb1ede9b3ea845ef3bddffc75914d54cdabf53e308d",
+    "split_sha256": "ace01f200205abbb18fb6abf4af0b18dfcb57386045078e80a8543d3e957ffa1",
+    "label_map_sha256": "78d0ff0eb329c67120b98027d1dec8f5a853b643833b18d5974bcd0fe1c8b2a4"
+  },
+  "split_config": {
+    "seed": 26,
+    "method": "within-class shuffle, round(20%) val/test, remainder train",
+    "scope": "within-recording only"
+  },
+  "training_seed": 26,
+  "test_waveforms": "read for integrity checks only; no test model inference",
+  "scope": "Within-recording splits; automatic audit does not certify manual listening/QC or cross-session independence."
+}

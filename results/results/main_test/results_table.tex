@@ -1,0 +1,18 @@
+\begin{table*}[t]
+\centering
+\caption{Main test experiment; the primary comparison is at 20 dB. Gaussian accuracy reports mean and sample standard deviation across noise streams.}
+\label{tab:test_results}
+\begin{tabular}{lrrrrr}
+\hline
+Condition & SNR (dB) & Accuracy (\%) & Macro-F1 & Drop (pp) & ASR (\%) \\
+\hline
+Clean & -- & 93.89 & 0.9370 & 0.00 & -- \\
+Gaussian & 30 & 4.07 $\pm$ 1.28 & 0.0078 & 89.81 & 95.66 \\
+Gaussian & 20 & 2.78 $\pm$ 0.00 & 0.0016 & 91.11 & 97.04 \\
+Gaussian & 10 & 3.15 $\pm$ 0.32 & 0.0035 & 90.74 & 96.65 \\
+FGSM-sign & 30 & 4.44 & 0.0092 & 89.44 & 95.27 \\
+FGSM-sign & 20 & 2.78 & 0.0016 & 91.11 & 97.04 \\
+FGSM-sign & 10 & 4.44 & 0.0047 & 89.44 & 95.86 \\
+\hline
+\end{tabular}
+\end{table*}
